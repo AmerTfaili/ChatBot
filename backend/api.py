@@ -8,9 +8,9 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse  
 from fastapi import Request, Response
 from fastapi import FastAPI, HTTPException, File, UploadFile
-app=FastAPI()
 import groq
 
+app=FastAPI()
 
 class TextRequest(BaseModel):
     query: str
